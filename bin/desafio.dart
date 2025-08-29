@@ -16,7 +16,7 @@ void main(List<String> arguments) {
   if (n1 == null) {
     print(
       printTexto(
-        'Entrada: ${line} inválida. Por favor, insira um número válido.',
+        'Entrada: $line inválida. Por favor, insira um número válido.',
       ),
     );
     return;
@@ -34,7 +34,7 @@ void main(List<String> arguments) {
   if (n2 == null) {
     print(
       printTexto(
-        'Entrada: ${line} inválida. Por favor, insira um número válido.',
+        'Entrada: $line inválida. Por favor, insira um número válido.',
       ),
     );
     return;
@@ -50,7 +50,7 @@ void main(List<String> arguments) {
     return;
   }
 
-  var resultado;
+  double resultado;
   try {
     resultado = operador(op.trim(), n1, n2);
   } catch (e) {
